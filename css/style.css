@@ -1,0 +1,58 @@
+/* Inspired by https://codepen.io/hjdesigner/pen/oZXajg */
+
+* {
+  background: #000;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 500px;
+  height: 160px;
+  position: relative;
+  border: 15px solid #00d8ff;
+  border-radius: 50%;
+}
+
+.logo:before {
+  content: "";
+  width: 500px;
+  height: 160px;
+  position: absolute;
+  border: 15px solid #00d8ff;
+  border-radius: 50%;
+  transform: rotate(125deg);
+  top: -25px;
+  left: -18px;
+}
+
+.logo:after {
+  content: "";
+  width: 500px;
+  height: 160px;
+  position: absolute;
+  border: 15px solid #00d8ff;
+  border-radius: 50%;
+  transform: rotate(-125deg);
+  top: -25px;
+  left: -18px;
+}
+
+.dot {
+  width: 100px;
+  height: 100px;
+  float: left;
+  background: #00d8ff;
+  border-radius: 50%;
+  margin-left: calc(50% - 50px);
+  margin-top: 30px;
+}
